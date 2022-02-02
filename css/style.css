@@ -11,8 +11,9 @@
 
 :root {
 	/* st colors */
-	--black-color: #000;
+	/* --black-color: #000; */
 	--white-color: #fff;
+	--black-color: #333;
 	/* nd colors */
 	--beige-color: #cba482;
 	--dark-grey-color: #494949;
@@ -22,33 +23,20 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: var(--white-color);
-	color: var(--black-color);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	color: var(--dark-grey-color);
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+}
+
+h1 {
+	font-size: 60px;
 }
 
 h1,
 h2 {
-	color: var(--black-color);
+	color: var(--dark-grey-color);
 	margin-bottom: 5px;
-}
-
-h1 {
-	font-size: 2rem;
-}
-
-input,
-select {
-	margin-bottom: 30px;
-}
-
-main {
-	margin-top: 120px;
-}
-
-label {
-	font-size: 1.2em;
 }
 
 a {
@@ -72,16 +60,71 @@ img {
   font-size: 20px;
 } */
 
-.navi {
+nav {
 	display: flex;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	align-items: center;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	width: 100%;
-	padding: 30px 50px;
-	background-color: rgba(238, 238, 238, 0.8);
-	height: 130px;
+	border-bottom: 5px solid var(--beige-color);
+	padding-bottom: 30px;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.navigation__menu {
+	margin-right: auto;
+}
+
+.navigation__menu--down {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-between;
+	padding: 0;
+	font-size: 18px;
+}
+
+.navigation__menu--space {
+	margin: 0 10px 0 10px;
+}
+
+.navigation__logo {
+	display: flex;
+	margin: 40px 90px 0 auto;
+}
+
+.navigation__logo img {
+	max-width: 96px;
+	min-width: 24px;
+}
+
+.social {
+	display: flex;
+	margin-right: 40px;
+	/* flex-direction: row; */
+}
+
+.social__menu {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+
+.social__menu img {
+	width: 50px;
+}
+
+.social__menu--space {
+	margin: 0 40px 0 0;
 }
 
 .menu {
@@ -96,21 +139,13 @@ img {
 	padding: 0 0 0 10px;
 }
 
-.logo {
-	list-style: none;
-	width: 100%;
-}
-
 .logo__watchword {
+	display: flex;
 	font-size: 2rem;
-	font-weight: 300;
+	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--dark-grey-color);
-}
-
-.logo__nd {
-	font-size: 1rem;
 }
 
 .textbox {
